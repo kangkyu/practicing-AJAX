@@ -1,10 +1,10 @@
 <h1>Tasks List</h1>
 
-<p><%= link_to 'New Task', new_task_path %></p>
+<p><%= link_to 'New Task', new_task_path, id: "new_link", remote: true %></p>
 
 <h2>Incomplete Tasks</h2>
-<div><%= render @incomplete_tasks %></div>
+<div id="incomplete_tasks"><%= render @incomplete_tasks %></div>
 
 <h2>Complete Tasks</h2>
-<div><%= render @complete_tasks %></div>
+<div id="complete_tasks"><%= render @complete_tasks %></div>
 
