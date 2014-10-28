@@ -1,6 +1,6 @@
 class TasksController < ApplicationController
   def index
-    sleep 2
+    # sleep 2
     @complete_tasks = Task.where(complete: true)
     @incomplete_tasks = Task.where(complete: false)
   end
