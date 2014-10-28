@@ -1,0 +1,10 @@
+<h1>Tasks List</h1>
+
+<p><%= link_to 'New Task', new_task_path %></p>
+
+<h2>Incomplete Tasks</h2>
+<div><%= render @incomplete_tasks %></div>
+
+<h2>Complete Tasks</h2>
+<div><%= render @complete_tasks %></div>
+

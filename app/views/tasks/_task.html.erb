@@ -1,0 +1,5 @@
+<%= form_for task do |f| %>
+  <%= f.check_box :complete %>
+  <%= f.submit "update" %>
+  <%= f.label :complete, task.name %>
+<% end %>
