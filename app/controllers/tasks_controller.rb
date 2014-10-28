@@ -4,6 +4,12 @@ class TasksController < ApplicationController
     @incomplete_tasks = Task.where(complete: false)
   end
 
+  def destroy
+    @task = Task.find(params[:id])
+    @task.destroy
+    redirect_to tasks_url
+  end
+
   def update
     @task = Task.find(params[:id])
     @task.update(task_params)

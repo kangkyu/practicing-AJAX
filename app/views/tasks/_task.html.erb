@@ -2,4 +2,5 @@
   <%= f.check_box :complete %>
   <%= f.submit "update" %>
   <%= f.label :complete, task.name %>
+  <%= link_to '(remove)', task_path(task), method: :delete, data: { confirm: "sure to delete \"#{task.name}\"?" } %>
 <% end %>
